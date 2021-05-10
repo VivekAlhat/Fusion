@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,AAAC,CACD,WAAW,CCKH,SAAS,CAAE,UAAU,CDJ9B",
+    "sources": [
+        "../../scss/typography/typography.scss",
+        "../../scss/_variables.scss"
+    ],
+    "names": [],
+    "file": "typography.min.css"
+}
