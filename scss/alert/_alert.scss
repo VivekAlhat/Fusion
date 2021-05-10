@@ -1,0 +1,83 @@
+@mixin alert {
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.alert-default {
+  @include alert();
+  background: $default-light;
+  color: #fff;
+}
+
+.alert-primary {
+  @include alert();
+  background: $primary-light;
+  color: #fff;
+}
+
+.alert-secondary {
+  @include alert();
+  background: $secondary-light;
+}
+
+.alert-info {
+  @include alert();
+  background: $info-light;
+  color: #fff;
+}
+
+.alert-success {
+  @include alert();
+  background: $success-light;
+  color: #fff;
+}
+
+.alert-danger {
+  @include alert();
+  background: $danger-light;
+  color: #fff;
+}
+
+.alert-warning {
+  @include alert();
+  background: $warning-light;
+  color: #fff;
+}
+
+// Outlined alert
+
+.alert-outline-default {
+  @include alert();
+  border: 1px solid $default-light;
+}
+
+.alert-outline-primary {
+  @include alert();
+  border: 1px solid $primary-light;
+}
+
+.alert-outline-secondary {
+  @include alert();
+  border: 1px solid $secondary-light;
+}
+
+.alert-outline-info {
+  @include alert();
+  border: 1px solid $info-light;
+}
+
+.alert-outline-success {
+  @include alert();
+  border: 1px solid $success-light;
+}
+
+.alert-outline-danger {
+  @include alert();
+  border: 1px solid $danger-light;
+}
+
+.alert-outline-warning {
+  @include alert();
+  border: 1px solid $warning-light;
+}
