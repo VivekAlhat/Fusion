@@ -1,0 +1,28 @@
+@mixin avatar {
+  border: 1px solid $muted;
+  border-radius: 50%;
+  object-fit: cover;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.avatar,
+.avatar-sm {
+  @include avatar();
+  width: 3rem;
+  height: 3rem;
+}
+
+.avatar-md {
+  @include avatar();
+  width: 5rem;
+  height: 5rem;
+}
+
+.avatar-lg {
+  @include avatar();
+  width: 7rem;
+  height: 7rem;
+}
