@@ -4,6 +4,9 @@
   border-radius: 5px;
 }
 
+// Regular alert
+
+.alert,
 .alert-default {
   @include alert();
   background: $default-light;
@@ -47,6 +50,7 @@
 
 // Outlined alert
 
+.alert-outline,
 .alert-outline-default {
   @include alert();
   border: 1px solid $default-light;
