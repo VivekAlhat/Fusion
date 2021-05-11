@@ -1,0 +1,110 @@
+@mixin badge {
+  margin: 5em 10rem;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+}
+
+// Regular badge
+
+.badge,
+.badge-default {
+  @include badge();
+  border-radius: 5px;
+  background: $default-badge;
+  color: $default;
+}
+
+.badge-primary {
+  @include badge();
+  border-radius: 5px;
+  background: $primary-badge;
+  color: $primary;
+}
+
+.badge-secondary {
+  @include badge();
+  border-radius: 5px;
+  background: $secondary-badge;
+  color: $default;
+}
+
+.badge-info {
+  @include badge();
+  border-radius: 5px;
+  background: $info-badge;
+  color: $info;
+}
+
+.badge-success {
+  @include badge();
+  border-radius: 5px;
+  background: $success-badge;
+  color: $success;
+}
+
+.badge-warning {
+  @include badge();
+  border-radius: 5px;
+  background: $warning-badge;
+  color: $warning;
+}
+
+.badge-danger {
+  @include badge();
+  border-radius: 5px;
+  background: $danger-badge;
+  color: $danger;
+}
+
+// Pill badge
+
+.pill-badge,
+.pill-badge-default {
+  @include badge();
+  border-radius: 20px;
+  background: $default-badge;
+  color: $default;
+}
+
+.pill-badge-primary {
+  @include badge();
+  border-radius: 20px;
+  background: $primary-badge;
+  color: $primary;
+}
+
+.pill-badge-secondary {
+  @include badge();
+  border-radius: 20px;
+  background: $secondary-badge;
+  color: $default;
+}
+
+.pill-badge-info {
+  @include badge();
+  border-radius: 20px;
+  background: $info-badge;
+  color: $info;
+}
+
+.pill-badge-success {
+  @include badge();
+  border-radius: 20px;
+  background: $success-badge;
+  color: $success;
+}
+
+.pill-badge-warning {
+  @include badge();
+  border-radius: 20px;
+  background: $warning-badge;
+  color: $warning;
+}
+
+.pill-badge-danger {
+  @include badge();
+  border-radius: 20px;
+  background: $danger-badge;
+  color: $danger;
+}
