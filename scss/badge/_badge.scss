@@ -1,4 +1,5 @@
 @mixin badge {
+  cursor: pointer;
   display: inline-block;
   padding: 8px;
   text-align: center;
@@ -106,4 +107,84 @@
   border-radius: 20px;
   background: $danger-badge;
   color: $danger;
+}
+
+// Outlined badge
+
+.outline-badge,
+.outline-badge-default {
+  @include badge();
+  border-radius: 5px;
+  border: 1px solid $default-badge;
+
+  &:hover {
+    background: $default-badge;
+    color: $default;
+  }
+}
+
+.outline-badge-primary {
+  @include badge();
+  border-radius: 5px;
+  border: 1px solid $primary-badge;
+
+  &:hover {
+    background: $primary-badge;
+    color: $primary;
+  }
+}
+
+.outline-badge-secondary {
+  @include badge();
+  border-radius: 5px;
+  border: 1px solid $secondary-badge;
+
+  &:hover {
+    background: $secondary-badge;
+    color: $default;
+  }
+}
+
+.outline-badge-info {
+  @include badge();
+  border-radius: 5px;
+  border: 1px solid $info-badge;
+
+  &:hover {
+    background: $info-badge;
+    color: $info;
+  }
+}
+
+.outline-badge-success {
+  @include badge();
+  border-radius: 5px;
+  border: 1px solid $success-badge;
+
+  &:hover {
+    background: $success-badge;
+    color: $success;
+  }
+}
+
+.outline-badge-warning {
+  @include badge();
+  border-radius: 5px;
+  border: 1px solid $warning-badge;
+
+  &:hover {
+    background: $warning-badge;
+    color: $warning;
+  }
+}
+
+.outline-badge-danger {
+  @include badge();
+  border-radius: 5px;
+  border: 1px solid $danger-badge;
+
+  &:hover {
+    background: $danger-badge;
+    color: $danger;
+  }
 }
