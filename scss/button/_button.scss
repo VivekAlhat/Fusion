@@ -1,0 +1,56 @@
+@mixin btn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 3px 3px rgba($color: $muted, $alpha: 0.5);
+}
+
+// Regular buttons
+
+.btn,
+.btn-default {
+  @include btn();
+  background: $default-light;
+  color: #fff;
+}
+
+.btn-primary {
+  @include btn();
+  background: $primary-light;
+  color: #fff;
+}
+
+.btn-secondary {
+  @include btn();
+  background: $secondary-light;
+  color: #000;
+}
+
+.btn-info {
+  @include btn();
+  background: $info-light;
+  color: #fff;
+}
+
+.btn-success {
+  @include btn();
+  background: $success-light;
+  color: #fff;
+}
+
+.btn-warning {
+  @include btn();
+  background: $warning-light;
+  color: #fff;
+}
+
+.btn-danger {
+  @include btn();
+  background: $danger-light;
+  color: #fff;
+}
