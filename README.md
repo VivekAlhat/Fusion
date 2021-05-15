@@ -1,2 +1,3 @@
 # Fusion
-A lightweight css component library
+
+CSS library for your next modern web design project.
