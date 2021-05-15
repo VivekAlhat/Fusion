@@ -5,9 +5,13 @@
   text-align: center;
   background: none;
   padding: 10px 20px;
-  border-radius: 5px;
   font-size: 1rem;
   box-shadow: 0 3px 3px rgba($color: $muted, $alpha: 0.5);
+  transition: background 200ms linear;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 // Regular buttons
@@ -53,4 +57,91 @@
   @include btn();
   background: $danger-light;
   color: #fff;
+}
+
+// Outlined buttons
+
+.btn-outline,
+.btn-outline-default {
+  @include btn();
+  box-shadow: none;
+  border: 1px solid $default;
+
+  &:hover {
+    box-shadow: 0 3px 3px rgba($color: $muted, $alpha: 0.5);
+    background: $default-light;
+    color: #fff;
+  }
+}
+
+.btn-outline-primary {
+  @include btn();
+  box-shadow: none;
+  border: 1px solid $primary;
+
+  &:hover {
+    box-shadow: 0 3px 3px rgba($color: $muted, $alpha: 0.5);
+    background: $primary-light;
+    color: #fff;
+  }
+}
+
+.btn-outline-secondary {
+  @include btn();
+  box-shadow: none;
+  border: 1px solid $secondary;
+
+  &:hover {
+    box-shadow: 0 3px 3px rgba($color: $muted, $alpha: 0.5);
+    background: $secondary-light;
+    color: #000;
+  }
+}
+
+.btn-outline-info {
+  @include btn();
+  box-shadow: none;
+  border: 1px solid $info;
+
+  &:hover {
+    box-shadow: 0 3px 3px rgba($color: $muted, $alpha: 0.5);
+    background: $info-light;
+    color: #fff;
+  }
+}
+
+.btn-outline-success {
+  @include btn();
+  box-shadow: none;
+  border: 1px solid $success;
+
+  &:hover {
+    box-shadow: 0 3px 3px rgba($color: $muted, $alpha: 0.5);
+    background: $success-light;
+    color: #fff;
+  }
+}
+
+.btn-outline-warning {
+  @include btn();
+  box-shadow: none;
+  border: 1px solid $warning;
+
+  &:hover {
+    box-shadow: 0 3px 3px rgba($color: $muted, $alpha: 0.5);
+    background: $warning-light;
+    color: #fff;
+  }
+}
+
+.btn-outline-danger {
+  @include btn();
+  box-shadow: none;
+  border: 1px solid $danger;
+
+  &:hover {
+    box-shadow: 0 3px 3px rgba($color: $muted, $alpha: 0.5);
+    background: $danger-light;
+    color: #fff;
+  }
 }
